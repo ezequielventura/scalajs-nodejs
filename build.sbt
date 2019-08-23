@@ -1,13 +1,11 @@
 enablePlugins(ScalaJSPlugin)
-// Use Node.
-scalaJSUseRhino in Global := false
 
 lazy val scalaJSNode = (project in file(".")).
   settings(
     organization := "com.mscharley",
     name := "scalajs-nodejs",
-    version := "0.2.0-SNAPSHOT",
-    scalaVersion := "2.11.8",
+    version := "0.3.0-SNAPSHOT",
+    scalaVersion := "2.12.8",
 
     // Info for Sonatype.
     publishMavenStyle := true,
